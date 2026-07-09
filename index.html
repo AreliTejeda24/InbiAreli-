@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0b0716">
+    <meta name="description" content="Areli Tejeda — Ingeniera Biomédica en Guadalajara. Quirófano, cirugía robótica Da Vinci, laparoscopía, mantenimiento y capacitación. Servicios para hospitales y clínicas.">
+    <title>Areli Tejeda | Ingeniería Biomédica · Guadalajara</title>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css?v=5">
+</head>
+<body>
+
+<div id="scroll-progress" aria-hidden="true"></div>
+<canvas id="vitals-canvas" aria-hidden="true"></canvas>
+<div id="bg-glow" aria-hidden="true"></div>
+
+<header class="navbar">
+    <a href="#inicio" class="logo">
+        <span class="logo-mark"><i class="fas fa-heart-pulse"></i></span>
+        <span class="logo-text">Areli <em>Tejeda</em></span>
+    </a>
+    <nav>
+        <ul class="nav-links">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#sobre-mi">Sobre mí</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#trayectoria">Trayectoria</a></li>
+            <li><a href="#contacto" class="nav-cta">Contáctame</a></li>
+        </ul>
+    </nav>
+    <div class="burger" aria-label="Menu"><div></div><div></div><div></div></div>
+</header>
+
+<main>
+
+<!-- ===== HERO ===== -->
+<section class="hero" id="inicio">
+    <div class="hero-content">
+        <div class="hero-eyebrow">Ingeniería Biomédica · Guadalajara</div>
+        <h1>Tecnología que <span class="h1-accent">cuida la vida.</span></h1>
+        <p class="hero-sub">
+            Soy <strong>Areli Tejeda</strong>, ingeniera biomédica con
+            <strong>experiencia hospitalaria y de quirófano</strong>: cirugía robótica
+            Da Vinci, laparoscopía y microcirugía. Trabajo en hospital y ofrezco
+            <strong>servicios independientes</strong> en la zona metropolitana de Guadalajara.
+        </p>
+        <div class="cta-group">
+            <a href="https://wa.me/523327949715" target="_blank" rel="noopener" class="btn-primary"><i class="fab fa-whatsapp"></i> Trabajemos juntos</a>
+            <a href="#servicios" class="btn-outline"><i class="fas fa-microscope"></i> Ver servicios</a>
+        </div>
+        <div class="hero-hint"><i class="fas fa-angles-down"></i> Desliza — la señal corre contigo</div>
+    </div>
+    <div class="hero-visual" aria-hidden="true">
+        <div class="monitor-card">
+            <div class="monitor-head">
+                <span class="monitor-dot"></span> Monitor de paciente
+                <span class="monitor-id">AT-01</span>
+            </div>
+            <div class="monitor-wave">
+                <svg viewBox="0 0 300 60" preserveAspectRatio="none">
+                    <path d="M0,38 L48,38 L58,38 L66,16 L74,56 L82,26 L88,44 L94,38 L150,38 L160,38 L168,14 L176,54 L184,24 L190,42 L196,38 L300,38"
+                          fill="none" stroke="url(#ekgGrad)" stroke-width="2"/>
+                    <defs>
+                        <linearGradient id="ekgGrad" x1="0" y1="0" x2="1" y2="0">
+                            <stop offset="0" stop-color="#4ade80"/>
+                            <stop offset="1" stop-color="#22c55e"/>
+                        </linearGradient>
+                    </defs>
+                </svg>
+            </div>
+            <div class="monitor-stats">
+                <div><span class="m-num">72</span><span class="m-label">FC · lpm</span></div>
+                <div><span class="m-num">98<small>%</small></span><span class="m-label">SpO₂</span></div>
+                <div><span class="m-num">120/80</span><span class="m-label">TA · mmHg</span></div>
+            </div>
+        </div>
+        <div class="float-chip chip-1"><i class="fas fa-heart-pulse"></i> Precisión</div>
+        <div class="float-chip chip-2"><i class="fas fa-flask"></i> Ciencia</div>
+        <div class="float-chip chip-3"><i class="fas fa-shield-heart"></i> Seguridad</div>
+    </div>
+</section>
+
+<!-- ===== FRANJA DE CONFIANZA ===== -->
+<div class="stats">
+    <div class="stats-inner">
+        <div class="stat reveal"><div class="stat-num"><i class="fas fa-award"></i></div><div class="stat-label">4+ años de experiencia</div></div>
+        <div class="stat reveal" style="transition-delay:.1s"><div class="stat-num"><i class="fas fa-graduation-cap"></i></div><div class="stat-label">Ing. Biomédica · UdeG (CUCEI)</div></div>
+        <div class="stat reveal" style="transition-delay:.2s"><div class="stat-num"><i class="fas fa-hospital"></i></div><div class="stat-label">Sector público y privado</div></div>
+        <div class="stat reveal" style="transition-delay:.3s"><div class="stat-num"><i class="fas fa-language"></i></div><div class="stat-label">Español · Inglés C1</div></div>
+    </div>
+</div>
+
+<!-- ===== SOBRE MÍ ===== -->
+<section class="section" id="sobre-mi">
+    <div class="two-col reveal">
+        <div>
+            <div class="section-label">Sobre mí</div>
+            <h2>Ing. Areli Tejeda</h2>
+            <p class="about-quote">"Detrás de cada cirugía segura hay un equipo que funciona bien."</p>
+            <p class="section-sub">
+                Ingeniera biomédica por la Universidad de Guadalajara (CUCEI), con
+                experiencia en el sector hospitalario público y privado. Vivo entre
+                quirófanos: cuido que cada equipo funcione con la precisión que un
+                paciente merece — del mantenimiento preventivo a la cirugía robótica.
+            </p>
+            <ul class="about-list">
+                <li><i class="fas fa-check"></i> Asistencia en cirugías robóticas Da Vinci, laparoscopías y microcirugías</li>
+                <li><i class="fas fa-check"></i> Mantenimiento preventivo y correctivo de equipo médico</li>
+                <li><i class="fas fa-check"></i> Manejo de analizadores, simuladores y equipo de medición</li>
+                <li><i class="fas fa-check"></i> Capacitación al personal de salud en uso seguro del equipo</li>
+            </ul>
+            <a href="https://wa.me/523327949715" target="_blank" rel="noopener" class="btn-primary" style="margin-top:1.6rem">Hablemos de tu proyecto →</a>
+        </div>
+        <div class="id-card">
+            <div class="id-glow" aria-hidden="true"></div>
+            <div class="id-photo"><img src="img/capacitacion.jpg" alt="Ing. Areli Tejeda capacitando al personal de salud en quirófano"></div>
+            <div class="id-name">Areli Tejeda</div>
+            <div class="id-role">Ingeniera Biomédica</div>
+            <div class="id-tags">
+                <span>Quirófano</span>
+                <span>Da Vinci</span>
+                <span>Laparoscopía</span>
+                <span>Anestesia</span>
+                <span>CEyE</span>
+                <span>Ultrasonido</span>
+            </div>
+            <div class="id-pulse" aria-hidden="true">
+                <svg viewBox="0 0 300 60" preserveAspectRatio="none">
+                    <path d="M0,30 L60,30 L75,30 L85,8 L95,52 L105,20 L112,38 L120,30 L180,30 L195,30 L205,10 L215,50 L225,22 L232,36 L240,30 L300,30"
+                          fill="none" stroke="url(#pulseGrad)" stroke-width="2"/>
+                    <defs>
+                        <linearGradient id="pulseGrad" x1="0" y1="0" x2="1" y2="0">
+                            <stop offset="0" stop-color="#4ade80"/>
+                            <stop offset="1" stop-color="#22c55e"/>
+                        </linearGradient>
+                    </defs>
+                </svg>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== SERVICIOS ===== -->
+<section class="section" id="servicios">
+    <div class="section-label">Servicios</div>
+    <h2 class="reveal">¿Cómo puedo ayudar a tu institución?</h2>
+    <p class="section-sub reveal">Soluciones de ingeniería biomédica para hospitales, clínicas, laboratorios y consultorios.</p>
+    <div class="cards">
+        <article class="card reveal">
+            <div class="card-icon"><i class="fas fa-laptop-medical"></i></div>
+            <h3>Gestión de tecnología médica</h3>
+            <p>Inventario, evaluación y planeación del ciclo de vida del equipo médico: adquirir bien, usar mejor y renovar a tiempo.</p>
+        </article>
+        <article class="card reveal" style="transition-delay:.08s">
+            <div class="card-icon"><i class="fas fa-screwdriver-wrench"></i></div>
+            <h3>Mantenimiento preventivo y correctivo</h3>
+            <p>Rutinas programadas y atención de fallas para maximizar la disponibilidad del equipo y reducir paros inesperados.</p>
+        </article>
+        <article class="card reveal" style="transition-delay:.16s">
+            <div class="card-icon"><i class="fas fa-gauge-high"></i></div>
+            <h3>Calibración y verificación</h3>
+            <p>Ajuste y comprobación de parámetros críticos para que cada medición y cada terapia sean exactas y seguras.</p>
+        </article>
+        <article class="card reveal" style="transition-delay:.24s">
+            <div class="card-icon"><i class="fas fa-hospital"></i></div>
+            <h3>Ingeniería clínica hospitalaria</h3>
+            <p>Acompañamiento en piso: rondas de verificación, apoyo a quirófano y soporte al personal en el uso del equipo.</p>
+        </article>
+        <article class="card reveal" style="transition-delay:.32s">
+            <div class="card-icon"><i class="fas fa-file-shield"></i></div>
+            <h3>Normativa y certificación</h3>
+            <p>Documentación y procesos alineados a NOM y COFEPRIS: bitácoras, protocolos y preparación para auditorías.</p>
+        </article>
+        <article class="card reveal" style="transition-delay:.4s">
+            <div class="card-icon"><i class="fas fa-chalkboard-user"></i></div>
+            <h3>Capacitación a personal</h3>
+            <p>Entrenamiento práctico para médicos y enfermería: uso seguro, cuidados básicos y detección temprana de fallas.</p>
+        </article>
+    </div>
+</section>
+
+<!-- ===== ESPECIALIDAD: QUIRÓFANO ===== -->
+<section class="section" id="quirofano">
+    <div class="section-label">Mi especialidad</div>
+    <h2 class="reveal">El quirófano es mi territorio</h2>
+    <p class="section-sub reveal">Domino el uso, la preparación y el cuidado del equipo que hace posible una cirugía segura.</p>
+    <div class="spec-grid">
+        <div class="spec reveal"><i class="fas fa-robot"></i><span>Sistema quirúrgico Da Vinci</span></div>
+        <div class="spec reveal" style="transition-delay:.06s"><i class="fas fa-tv"></i><span>Torres de laparoscopía</span></div>
+        <div class="spec reveal" style="transition-delay:.12s"><i class="fas fa-microscope"></i><span>Microscopios quirúrgicos</span></div>
+        <div class="spec reveal" style="transition-delay:.18s"><i class="fas fa-lungs"></i><span>Máquinas de anestesia</span></div>
+        <div class="spec reveal" style="transition-delay:.24s"><i class="fas fa-bolt"></i><span>Electrocirugía y energía</span></div>
+        <div class="spec reveal" style="transition-delay:.3s"><i class="fas fa-pump-medical"></i><span>CEyE · autoclaves y esterilización</span></div>
+    </div>
+</section>
+
+<!-- ===== PROCESO ===== -->
+<section class="section" id="proceso">
+    <div class="section-label">Método</div>
+    <h2 class="reveal">Así trabajo tu proyecto</h2>
+    <div class="steps">
+        <div class="step reveal">
+            <div class="step-num">1</div>
+            <h3>Diagnóstico</h3>
+            <p>Levantamiento del equipo y sus condiciones: qué tienes, cómo está y qué riesgos hay.</p>
+        </div>
+        <div class="step reveal" style="transition-delay:.1s">
+            <div class="step-num">2</div>
+            <h3>Plan de acción</h3>
+            <p>Propuesta clara con prioridades, calendario de mantenimiento y presupuesto.</p>
+        </div>
+        <div class="step reveal" style="transition-delay:.2s">
+            <div class="step-num">3</div>
+            <h3>Ejecución</h3>
+            <p>Mantenimiento, calibración o capacitación con mínima interrupción de tu operación.</p>
+        </div>
+        <div class="step reveal" style="transition-delay:.3s">
+            <div class="step-num">4</div>
+            <h3>Informe y seguimiento</h3>
+            <p>Evidencia documentada de cada intervención y monitoreo para que todo siga en norma.</p>
+        </div>
+    </div>
+</section>
+
+<!-- ===== TRAYECTORIA ===== -->
+<section class="section" id="trayectoria">
+    <div class="section-label">Trayectoria</div>
+    <h2 class="reveal">Dónde he dejado huella</h2>
+    <div class="timeline">
+        <div class="tl-item reveal">
+            <div class="tl-dot"></div>
+            <div class="tl-date">2022 — Actualidad</div>
+            <h3>Ingeniera Biomédica · Hospital Real San José Valle Real</h3>
+            <p>Mantenimiento preventivo y correctivo, asistencia en cirugías robóticas
+               Da Vinci, laparoscopías y microcirugías, rutinas de quirófano y máquinas
+               de anestesia, CEyE y capacitación al personal.</p>
+        </div>
+        <div class="tl-item reveal" style="transition-delay:.1s">
+            <div class="tl-dot"></div>
+            <div class="tl-date">2022</div>
+            <h3>Auxiliar de Ingeniería Biomédica · Premium Systems</h3>
+            <p>Mantenimiento, instalación y revisión de infraestructura de equipos de ultrasonido.</p>
+        </div>
+        <div class="tl-item reveal" style="transition-delay:.2s">
+            <div class="tl-dot"></div>
+            <div class="tl-date">2021 — 2022</div>
+            <h3>Pasante · Instituto Jalisciense de Cancerología</h3>
+            <p>Mantenimiento a equipo médico, control de inventario y rutinas de verificación por áreas.</p>
+        </div>
+        <div class="tl-item reveal" style="transition-delay:.3s">
+            <div class="tl-dot"></div>
+            <div class="tl-date">2018 — 2022</div>
+            <h3>Ingeniería Biomédica · Universidad de Guadalajara, CUCEI</h3>
+            <p>Título en Ingeniería Biomédica. Proyectos de rehabilitación interactiva,
+               nanopartículas antimicrobianas y dispositivos de rehabilitación robótica.</p>
+        </div>
+    </div>
+</section>
+
+<!-- ===== FRANJA CINEMÁTICA ===== -->
+<section class="banner" aria-label="La ingeniería al servicio de la vida">
+    <div class="banner-media" aria-hidden="true"><img src="img/quirofano.jpg" alt=""></div>
+    <div class="banner-content">
+        <p class="banner-quote">"La ingeniería al servicio de la vida."</p>
+        <span class="banner-author">— Ing. Areli Tejeda</span>
+    </div>
+</section>
+
+<!-- ===== GALERÍA ===== -->
+<section class="section" id="galeria">
+    <div class="section-label">En acción</div>
+    <h2 class="reveal">Del taller al quirófano</h2>
+    <p class="section-sub reveal">Un vistazo real a mi día a día con la tecnología médica.</p>
+    <div class="gallery-row">
+        <figure class="gallery-item reveal">
+            <img src="img/davinci.jpg" alt="Areli operando la consola del sistema quirúrgico Da Vinci" loading="lazy" class="parallax-img">
+            <figcaption>Consola del sistema quirúrgico Da Vinci</figcaption>
+        </figure>
+        <figure class="gallery-item reveal" style="transition-delay:.08s">
+            <img src="img/laparoscopia.jpg" alt="Torre de laparoscopía Stryker en quirófano" loading="lazy" class="parallax-img">
+            <figcaption>Torre de laparoscopía en quirófano</figcaption>
+        </figure>
+        <figure class="gallery-item reveal" style="transition-delay:.16s">
+            <img src="img/calibracion.jpg" alt="Pruebas de seguridad eléctrica a máquina de anestesia con analizador" loading="lazy" class="parallax-img">
+            <figcaption>Pruebas de seguridad a máquina de anestesia</figcaption>
+        </figure>
+        <figure class="gallery-item reveal" style="transition-delay:.24s">
+            <img src="img/capacitacion-grupo.jpg" alt="Sesión de capacitación al personal de salud en quirófano" loading="lazy" class="parallax-img">
+            <figcaption>Capacitación al personal de salud</figcaption>
+        </figure>
+        <figure class="gallery-item reveal" style="transition-delay:.32s">
+            <img src="img/imagenologia.jpg" alt="Revisión de negatoscopios en área de imagenología" loading="lazy" class="parallax-img">
+            <figcaption>Imagenología y revisión de equipo</figcaption>
+        </figure>
+        <figure class="gallery-item reveal" style="transition-delay:.4s">
+            <img src="img/piso.jpg" alt="Areli en rondas de soporte en piso hospitalario" loading="lazy" class="parallax-img">
+            <figcaption>Rondas y soporte en piso hospitalario</figcaption>
+        </figure>
+    </div>
+</section>
+
+<!-- ===== CONTACTO ===== -->
+<section class="section contact" id="contacto">
+    <div class="section-label">Contacto</div>
+    <h2 class="reveal">Hablemos de tu proyecto</h2>
+    <p class="section-sub reveal">Cuéntame qué necesita tu clínica, hospital o laboratorio y te propongo una solución.</p>
+    <div class="social-row">
+        <a class="social-card reveal" href="https://wa.me/523327949715" target="_blank" rel="noopener">
+            <i class="fab fa-whatsapp"></i>
+            <h3>33 2794 9715</h3>
+            <p>WhatsApp · Respuesta rápida</p>
+        </a>
+        <a class="social-card reveal" style="transition-delay:.08s" href="mailto:areli.tejeda24@gmail.com">
+            <i class="fas fa-envelope"></i>
+            <h3>Correo</h3>
+            <p>areli.tejeda24@gmail.com</p>
+        </a>
+        <a class="social-card reveal" style="transition-delay:.16s" href="https://mx.linkedin.com/in/areli-tejeda-492b61229" target="_blank" rel="noopener">
+            <i class="fab fa-linkedin-in"></i>
+            <h3>LinkedIn</h3>
+            <p>Areli Tejeda</p>
+        </a>
+        <div class="social-card reveal" style="transition-delay:.24s">
+            <i class="fas fa-location-dot"></i>
+            <h3>Guadalajara</h3>
+            <p>Zona metropolitana · Jalisco</p>
+        </div>
+    </div>
+</section>
+
+</main>
+
+<footer>
+    <div class="footer-inner">
+        <div class="footer-brand">
+            <span class="logo-mark"><i class="fas fa-heart-pulse"></i></span>
+            <span class="logo-text">Areli <em>Tejeda</em></span>
+        </div>
+        <div class="footer-info">
+            <p>Ingeniería biomédica · Zona metropolitana de Guadalajara</p>
+            <p><a href="https://wa.me/523327949715" style="color:inherit">WhatsApp 33 2794 9715</a> · <a href="mailto:areli.tejeda24@gmail.com" style="color:inherit">areli.tejeda24@gmail.com</a></p>
+            <p class="footer-social">
+                <a href="https://wa.me/523327949715" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://mx.linkedin.com/in/areli-tejeda-492b61229" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="mailto:areli.tejeda24@gmail.com" aria-label="Correo"><i class="fas fa-envelope"></i></a>
+            </p>
+        </div>
+    </div>
+    <p class="footer-copy">© 2026 Areli Tejeda · Ingeniería Biomédica</p>
+</footer>
+
+<script src="libs/gsap.min.js"></script>
+<script src="libs/ScrollTrigger.min.js"></script>
+<script src="libs/lenis.min.js"></script>
+<script src="script.js?v=4"></script>
+</body>
+</html>
